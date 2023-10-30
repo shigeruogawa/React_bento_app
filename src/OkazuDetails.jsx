@@ -9,7 +9,7 @@ export default function OkazuDetails() {
   console.log(okazuId);
   const [okazu, setOkazu] = useState();
 
-  const uri = `http://localhost:8081/stock/sidedishes/${okazuId}`;
+  const uri = `${process.env.REACT_APP_API_BASE_PATH}/sidedishes/${okazuId}`;
   console.log(uri);
 
   useEffect(() => {
